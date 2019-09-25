@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import axios from "axios";
-import fetchImg from "./components/Fetch.js"
+import FetchImg from "./components/Fetch.js"
 import Header from "./components/Header.js"
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
     <>
     <Header />
    
-    <fetchImg
+    <FetchImg
       title = {apod.title}
       date = {apod.date}
       url = {apod.url}
