@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import axios from "axios";
-import fetchImg from "./components/fetchImg"
-import Header from "./components/Header"
+import fetchImg from "./components/fetchImg.js"
+import Header from "./components/Header.js"
 
 function App() {
-  const [apodPic, setApodPic] = useState({});
+  const [apod, setApodPic] = useState({});
     useEffect(() =>{
       axios
       .get("https://api.nasa.gov/planetary/apod")
@@ -22,11 +22,11 @@ function App() {
     <>
     <Header />
     <fetchImg
-      title={apodPic.title}
-      date={apodPic.date}
-      url={apodPic.url}
-      explanation={apodPic.explanation}
-      copyright={apodPic.copyright}
+      title={apod.title}
+      date={apod.date}
+      url={apod.url}
+      explanation={apod.explanation}
+      copyright={apod.copyright}
       />
       </>
 
