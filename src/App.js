@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import axios from "axios";
-import fetchImg from "./components/fetch.js"
+import fetchImg from "./components/Fetch.js"
 import Header from "./components/Header.js"
 
 function App() {
