@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import axios from "axios";
-import fetchImg from "components/fetchImg";
-import Header from "components/Header";
+import fetchImg from "./components/fetchImg"
+import Header from "./components/Header"
 
 function App() {
   const [apodPic, setApodPic] = useState({});
@@ -35,9 +35,3 @@ function App() {
 }
 
 export default App;
-  // <div className="App">
-    //   <p>
-        
-    //   </p>
-    // </div>
-  // );
