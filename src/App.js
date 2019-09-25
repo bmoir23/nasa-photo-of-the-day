@@ -7,7 +7,8 @@ import Header from "components/Header";
 function App() {
   const [apodPic, setApodPic] = useState({});
     useEffect(() =>{
-      axios.get("https://api.nasa.gov/planetary/apod")
+      axios
+      .get("https://api.nasa.gov/planetary/apod")
       .then(response =>{
         setApodPic(response.data);
       })
