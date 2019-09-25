@@ -1,6 +1,6 @@
 import React from "react";
 
-const fetchImg = function(props){
+const fetch = function(props){
     return(
         <div className ="imgCard">
             <h2>{props.title}</h2>
