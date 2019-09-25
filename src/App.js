@@ -7,8 +7,7 @@ import Header from "./components/Header.js"
 function App() {
   const [apod, setApodPic] = useState({});
     useEffect(() =>{
-      axios
-      .get("https://api.nasa.gov/planetary/apod")
+      axios.get("https://api.nasa.gov/planetary/apod?api_key=g31FIHk5hi5C9bCObt50BktMgP6k7I1tetWnHFtv")
       .then(response =>{
         setApodPic(response.data);
       })
@@ -27,7 +26,7 @@ function App() {
       date = {apod.date}
       url = {apod.url}
       explanation = {apod.explanation}
-      copyright = {apod.copyright}/>
+      copyright = {apod.copyright} />
       
       </>
 
