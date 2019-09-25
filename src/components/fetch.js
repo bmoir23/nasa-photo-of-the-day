@@ -1,6 +1,6 @@
 import React from "react";
 
-const fetch = function(props){
+const fetchImg = function(props){
     return(
         <div className ="imgCard">
             <h2>{props.title}</h2>
@@ -10,4 +10,4 @@ const fetch = function(props){
         </div>
     );
 };
-export default fetch;
+export default fetchImg;

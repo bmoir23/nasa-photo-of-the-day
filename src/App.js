@@ -21,13 +21,14 @@ function App() {
   return (
     <>
     <Header />
+   
     <fetchImg
-      title={apod.title}
-      date={apod.date}
-      url={apod.url}
-      explanation={apod.explanation}
-      copyright={apod.copyright}
-      />
+      title = {apod.title}
+      date = {apod.date}
+      url = {apod.url}
+      explanation = {apod.explanation}
+      copyright = {apod.copyright}/>
+      
       </>
 
   );
